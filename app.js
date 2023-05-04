@@ -1218,6 +1218,10 @@ app.delete("/api/country/:id", verifyHR, (req, res) => {
   console.log(req.params.id);
 });
 
+app.get("/api/testing",(req,res)=>{
+  res.send({message:"testinggggg"})
+})
+
 app.get("/api/state", verifyHR, (req, res) => {
   State.find()
     .populate("country citiesx")
