@@ -14,7 +14,8 @@ let jwtKey = process.env.JWTKEY;
 
 app.use(
   cors({
-    origin: "https://master--friendly-rugelach-7546d4.netlify.app/",
+    origin: "*",
+    
   })
 );
 app.use(function (req, res, next) {
