@@ -14,7 +14,7 @@ let jwtKey = process.env.JWTKEY;
 
 app.use(
   cors({
-    origin: "https://master--melodic-chaja-9f39e2.netlify.app/",
+    origin: "https://master--luminous-lokum-dc3f12.netlify.app/",
   })
 );
 app.use(function (req, res, next) {
